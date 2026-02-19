@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      { "command": "C:\\path\\to\\MicroslopPeon.exe" }
+    ],
+    "stop": [
+      { "command": "C:\\path\\to\\MicroslopPeon.exe" }
+    ],
+    "afterFileEdit": [
+      { "command": "C:\\path\\to\\MicroslopPeon.exe" }
+    ]
+  }
+}

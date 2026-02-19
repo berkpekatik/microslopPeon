@@ -1,0 +1,14 @@
+{
+  "packFolder": "",
+  "peonFolder": "",
+  "volume": 0.2,
+  "hookToCategory": {
+    "stop": "task.complete",
+    "preToolUse": "input.required",
+    "postToolUse": "input.required",
+    "postToolUseFailure": "task.error",
+    "sessionStart": "session.start"
+  },
+  "toastDurationSeconds": 4,
+  "toastTitle": "Task completed"
+}

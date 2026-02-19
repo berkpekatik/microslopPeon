@@ -1,0 +1,39 @@
+# Pack folder and test scripts — not tracked (add your own peon/packs and bat locally)
+peon/
+bat/
+
+# Build and publish
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Pp]ublish/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.meta
+Thumbs.db
+
+# IDE / tools
+.vs/
+.idea/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Other
+*.log
+.DS_Store
