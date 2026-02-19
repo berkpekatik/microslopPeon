@@ -1,6 +1,5 @@
 # Pack folder and test scripts — not tracked (add your own peon/packs and bat locally)
 peon/
-bat/
 
 # Build and publish
 [Dd]ebug/
