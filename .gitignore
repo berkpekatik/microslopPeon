@@ -36,3 +36,5 @@ packages/
 # Other
 *.log
 .DS_Store
+peonpics/
+peon-web/

@@ -6,6 +6,8 @@
     "stop": "task.complete",
     "preToolUse": "input.required",
     "postToolUse": "input.required",
+    "beforeShellExecution": "input.required",
+    "onError": "task.error",
     "postToolUseFailure": "task.error",
     "sessionStart": "session.start"
   },
