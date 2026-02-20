@@ -106,6 +106,7 @@ static class Program
         form.Location = new Point(area.Left + (area.Width - form.Width) / 2, area.Top + 16);
         form.StartCloseTimer();
         Application.Run(form);
+        Environment.Exit(0);
     }
 
     static void RunToastInProcess(string packFolder, string avatarPath, string title, int duration)
@@ -124,6 +125,7 @@ static class Program
         form.Location = new Point(area.Left + (area.Width - form.Width) / 2, area.Top + 16);
         form.StartCloseTimer();
         Application.Run(form);
+        Environment.Exit(0);
     }
 
     static AppConfig LoadConfig()

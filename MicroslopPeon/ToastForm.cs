@@ -2,11 +2,23 @@ namespace MicroslopPeon;
 
 /// <summary>
 /// Top-most smooth, horizontal dark toast with peon avatar and colored title; closes after N seconds.
-/// No title bar, no close/move — borderless.
+/// No title bar, no close/move — borderless. Hidden from taskbar and Alt+Tab.
 /// </summary>
 public sealed class ToastForm : Form
 {
     private readonly System.Windows.Forms.Timer _closeTimer;
+
+    private const int WS_EX_TOOLWINDOW = 0x00000080;
+
+    protected override CreateParams CreateParams
+    {
+        get
+        {
+            var cp = base.CreateParams;
+            cp.ExStyle |= WS_EX_TOOLWINDOW;
+            return cp;
+        }
+    }
 
     public ToastForm(string avatarPath, string title, int durationSeconds)
     {
